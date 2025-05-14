@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon " href="./imagen/logo.jpg">
+        <title>Check List</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="bg-orange text-white py-3">
+            <div class="container d-flex justify-content-between align-items-center">            
+                <a href="/" class="navegacion"><img src="/imagen/logo2.png" alt="logo"></a>            
+                <nav>
+                    
+                    <a href="/registro" class="navegacion">REGISTRO ASISTENCIA</a>
+                    <a href="/admin" class="navegacion">ADMINISTRADOR</a>
+                </nav>
+            </div>
+        </header>
+        <div class="formulario">
+            <h1 class="text-center mt-4">Iniciar sesión administrador</h1>
+        
+            <div class="container mt-5">
+                <div class="card shadow p-4 text-center">
+                    <form action="/login" method="POST">
+                        <div class="mb-3">
+                            <label for="codigo" class="form-label fw-bold" >Usuario</label>
+                            <input type="text" class="form-control text-center" id="usuario" name="id" placeholder="Escribe el usuario" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="codigo" class="form-label fw-bold" >Contraseña</label>
+                            <input type="password" class="form-control text-center" id="constrasena" name="contrasena" placeholder="Escribe la contraseña" required>
+                        </div>
+                        
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 fw-bold">Iniciar sesión</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
